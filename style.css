@@ -1,47 +1,62 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-html{
+/* Resetting margin, padding, and applying border-box model for all elements. 
+   Setting the default font-family to sans-serif. */
+
+html {
     scroll-behavior: smooth;
 }
 
-section{
+/* Adding smooth scrolling behavior for a better user experience. */
+
+section {
     width: 100%;
     height: 100vh;
 }
 
-section nav{
+/* Styling the sections to take the full width and height of the viewport. */
+
+section nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: fixed;
     right: 0;
-    left:0;
+    left: 0;
     background: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     z-index: 1000;
 }
 
-section nav .logo img{
+/* Styling the navigation bar within each section with flex properties, fixed positioning, and a box shadow. */
+
+section nav .logo img {
     width: 150px;
     cursor: pointer;
     margin: 0 15px;
 }
 
-section nav ul{
+/* Styling the logo within the navigation bar with specific width, cursor, and margin. */
+
+section nav ul {
     list-style: none;
 }
 
-section nav ul li{
+/* Removing default list styles for the navigation links. */
+
+section nav ul li {
     display: inline-block;
     margin: 0 15px;
 }
 
-section nav ul li a{
+/* Styling list items within the navigation bar as inline-blocks with specific margins. */
+
+section nav ul li a {
     text-decoration: none;
     color: black;
     font-weight: 500;
@@ -49,7 +64,9 @@ section nav ul li a{
     transition: 0.1s;
 }
 
-section nav ul li a::after{
+/* Styling the navigation links with text decoration, color, font-weight, size, and transition. */
+
+section nav ul li a::after {
     content: '';
     width: 100%;
     height: 2px;
@@ -59,15 +76,21 @@ section nav ul li a::after{
     transition: 0.2s linear;
 }
 
-section nav ul li a:hover::after{
+/* Adding an underline effect after the navigation links with a transition. */
+
+section nav ul li a:hover::after {
     width: 100%;
 }
 
-section nav ul li a:hover{
+/* Expanding the underline effect on hover. */
+
+section nav ul li a:hover {
     color: #fac031;
 }
 
-section nav .icon i{
+/* Changing text color on hover. */
+
+section nav .icon i {
     font-size: 18px;
     color: #000000;
     margin: 0 5px;
@@ -75,12 +98,16 @@ section nav .icon i{
     transition: 0.3s;
 }
 
-section nav .icon i:hover{
+/* Styling icons within the navigation bar with font size, color, margin, cursor, and transition. */
+
+section nav .icon i:hover {
     color: #fac031;
 }
 
-section .main{
-    display:Flex;
+/* Changing icon color on hover. */
+
+section .main {
+    display: flex;
     align-items: center;
     justify-self: space-around;
     position: relative;
@@ -89,14 +116,18 @@ section .main{
     font-size: x-large;
 }
 
-section .main .men_text h1{
+/* Styling the main content section with flex display, alignment, and positioning. */
+
+section .main .men_text h1 {
     font-size: 60px;
     position: relative;
     top: -90px;
     left: 20px;
 }
 
-section .main .men_text h1 span{
+/* Styling the heading within the main content section with font size, position, and alignment. */
+
+section .main .men_text h1 span {
     margin-left: 15px;
     color: #fac031;
     font-family: mv boli;
@@ -104,17 +135,23 @@ section .main .men_text h1 span{
     font-size: 70px;
 }
 
-section .main .main_image img{
+/* Styling a span within the heading with margin, color, font-family, line-height, and font size. */
+
+section .main .main_image img {
     width: 700px;
     position: relative;
     left: 70px;
 }
 
-section p{
-    width:1200px;
+/* Styling images within the main content section with specific width and positioning. */
+
+section p {
+    width: 1200px;
     text-align: justify;
     position: relative;
     left: 200px;
     bottom: -250px;
     line-height: 22px;
 }  
+
+/* Styling paragraphs within the section with specific width, text alignment, positioning, line-height, and bottom position. */
